@@ -1,0 +1,15 @@
+/* Profile.css */
+.profile-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-options {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profile-options li {
+    margin: 10px 0;
+  }
+  

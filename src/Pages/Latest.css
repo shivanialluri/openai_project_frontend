@@ -1,0 +1,44 @@
+Latest.css
+
+.banner {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.banner h2 {
+  color: #3f51b5;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-list .MuiGrid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiCard-root {
+  width: 100%;
+  max-width: 345px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.MuiCardMedia-root {
+  height: 350px;
+  object-fit: cover;
+}
+
+.MuiCardContent-root, .MuiCardActions-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

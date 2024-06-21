@@ -1,0 +1,18 @@
+.checkout-section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-form .MuiTextField-root {
+    margin-bottom: 15px;
+  }
+  
+  .checkout-form .MuiButton-root {
+    margin-top: 20px;
+  }
+  

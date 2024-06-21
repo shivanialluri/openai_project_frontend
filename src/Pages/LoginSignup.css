@@ -1,0 +1,44 @@
+/* LoginSignup.css */
+
+.header {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    color: #3f51b5;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .submit-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .hover-card {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

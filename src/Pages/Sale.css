@@ -1,0 +1,46 @@
+/* Sale.css */
+
+.box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.box h2 {
+  color: #3f51b5;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-list .MuiGrid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-wrapper {
+  position: relative;
+}
+
+.sale-product .MuiCardContent-root > .MuiTypography-body2 {
+  display: none; /* Hide the original price elements from Product.js */
+}
+
+/* .price-overlay {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+} */

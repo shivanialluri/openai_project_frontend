@@ -1,0 +1,75 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: linear-gradient(to left,#01dfed,#7bb8fe);
+    padding: 10px 20px;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo img {
+    height: 60px;
+    width: 300px;
+  }
+  
+  .nav-logo p {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Center the menu items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nav-menu li hr {
+    margin: 0;
+    border: none;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+  }
+  
+  .nav-login-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-login-cart button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .nav-login-cart img {
+    height: 24px;
+  }
+  
+  .nav-cart-count {
+    margin-left: 10px;
+    color: white;
+  }
+  

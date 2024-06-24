@@ -152,3 +152,9 @@
     max-width: fit-content;
 }
 
+.custom-snackbar .MuiSnackbarContent-root {
+    width: 500px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+

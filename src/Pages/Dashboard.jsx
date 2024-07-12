@@ -9,6 +9,7 @@ import Product from '../Components/Product';
 import { Container, Typography, Grid } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import axios from 'axios';
+import Navbar from '../Components/Navabar/Navbar';
 
 const theme = createTheme({
   palette: {
@@ -75,6 +76,7 @@ const Dashboard = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container className="banner">
+              <Navbar/>
                 <Typography variant="h2" component="h1" gutterBottom>
                     Have a look!
                 </Typography>

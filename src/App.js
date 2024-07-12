@@ -20,6 +20,7 @@ import OpenAIComponent from './Pages/OpenAIComponent';
 import ChatAssistant from './Pages/ChatAssistant';
 // import ChatUsersPortal from './Pages/ChatUsersPortal';
 import SupportTicketsPortal from './Pages/ChatUsersPortal';
+import OpenAIComponentNMD from './Pages/OpenAIComponentNMD';
 
 
 
@@ -28,7 +29,7 @@ function App() {
   return (
     <div> 
       <BrowserRouter>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route path='/' element={<Shop/>}/>
         <Route path='/latest' element={<Latest/>}/>
@@ -50,7 +51,8 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword/>}/>
         <Route path="/settings" element={<Settings/>}/>
         <Route path="/chat-assistant" element={<ChatAssistant/>}/>
-        <Route path="/openai" element={<OpenAIComponent/>}/>
+        <Route path="/map" element={<OpenAIComponent/>}/>
+        <Route path="/notifymd" element={<OpenAIComponentNMD/>}/>
         <Route path="/supportticketsportal" element={<SupportTicketsPortal/>}/>
       </Routes>
 

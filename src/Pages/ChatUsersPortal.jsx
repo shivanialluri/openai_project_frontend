@@ -4,6 +4,7 @@ import './ChatUsersPortal.css';
 import { Backdrop, Fade, Typography, Button, Modal, Box, Card } from '@mui/material';
 import Chart from 'react-apexcharts';
 import moment from 'moment';
+import Navbar from '../Components/Navabar/Navbar';
 
 const SupportTicketsPortal = () => {
     console.log("MONDAY_API_KEY:", process.env.REACT_APP_MONDAY_API_KEY);
@@ -203,7 +204,7 @@ const SupportTicketsPortal = () => {
                         categories: xaxis
                     },
                     title: {
-                        text: 'Weekly Insights',
+                        text: 'Insights',
                         floating: true,
                         align: 'center',
                         style: {
@@ -243,7 +244,10 @@ const SupportTicketsPortal = () => {
     }, [leadsCount, ticketsCount, conversationsCount]);
 
     return (
+        <div>
+             <Navbar/>
         <div className="chat-users-portal">
+           
             <div className="card-container">
                 <Card className="info-card">
                     <div className="info-card-content">
@@ -328,6 +332,7 @@ const SupportTicketsPortal = () => {
                     </div>
                 </div>
             </Modal>
+        </div>
         </div>
     );
 };

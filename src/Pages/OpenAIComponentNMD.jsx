@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './OpenAIComponent.css';
     import MapPage from './MapPage';
+import NotifyMDPage from './NotifyMDPage';
 
-const OpenAIComponent = () => {
+const OpenAIComponentNMD = () => {
     const [input, setInput] = useState('');
     const [messages, setMessages] = useState([]);
     const [isChatOpen, setChatOpen] = useState(false);
@@ -35,11 +36,8 @@ const OpenAIComponent = () => {
     },[sessionId])
 
     const initialMessage = async() => {
-        const res = await axios.get("https://api.ipify.org/?format=json");
-        console.log(res.data);
-        //setIP(res.data.ip);
         try {
-            const res = await axios.post('http://localhost:5001/api/openai?brand=map', {
+            const res = await axios.post('http://localhost:5001/api/openai?brand=notifymd', {
                 sessionId,
                 userResponse: { role: 'user', content: 'Hello' }
             });
@@ -59,7 +57,7 @@ const OpenAIComponent = () => {
         setInput('');
 
         try {
-            const res = await axios.post('http://localhost:5001/api/openai?brand=map', {
+            const res = await axios.post('http://localhost:5001/api/openai?brand=notifymd', {
                 sessionId,
                 userResponse: userMessage
             });
@@ -85,7 +83,7 @@ const OpenAIComponent = () => {
         <div>
 
 
-            <MapPage/>
+            <NotifyMDPage/>
 
 
 
@@ -97,15 +95,15 @@ const OpenAIComponent = () => {
                 <span>💬</span>
             </button>
             {isChatOpen && (
-                <div className="chat-container">
+                <div className="chat-container" style={{zIndex:1000}}>
                     <div className="chat-header">
-                        <span>MAP Team</span>
+                        <span>NotifyMD Team</span>
                         <button className="close-button" onClick={toggleChat}></button>
                     </div>
                     <div className="chat-body" ref={messagesEndRef}>
                         {messages.map((msg, index) => (
                             <div key={index} className={`chat-message ${msg.role}`}>
-                                <div className="chat-message-role">{msg.role === 'user' ? 'You' : 'MAP Team'}</div>
+                                <div className="chat-message-role">{msg.role === 'user' ? 'You' : 'NotifyMD Team'}</div>
                                 <div className="chat-message-content">{msg.content}</div>
                             </div>
                         ))}
@@ -131,7 +129,7 @@ const OpenAIComponent = () => {
     );
 };
 
-export default OpenAIComponent;
+export default OpenAIComponentNMD;
 
 
 
